@@ -1,0 +1,245 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Brownies - Premium Brownies untuk Momen Spesial</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FEFBF6; /* A soft cream background */
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-hero {
+            background-color: #A67B5B; /* A warm brown color */
+            background-image: linear-gradient(135deg, #8D6E63 0%, #A1887F 100%);
+        }
+        .brown-btn {
+            background-color: #6D4C41; /* Darker brown for buttons */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .brown-btn:hover {
+            background-color: #4E342E; /* Even darker on hover */
+        }
+        .section-title {
+            color: #4E342E;
+        }
+        .card-bg {
+            background-color: #FDFEFE;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-display text-gray-800">
+                Blissful Brownies
+            </a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#tentang" class="text-gray-600 hover:text-gray-900">Tentang Kami</a>
+                <a href="#produk" class="text-gray-600 hover:text-gray-900">Produk</a>
+                <a href="#mengapa-kami" class="text-gray-600 hover:text-gray-900">Keunggulan</a>
+                <a href="#pesan" class="brown-btn font-semibold py-2 px-4 rounded-lg">Pesan Sekarang</a>
+            </div>
+            <div class="md:hidden">
+                 <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#tentang" class="block py-2 px-4 text-sm hover:bg-gray-100">Tentang Kami</a>
+            <a href="#produk" class="block py-2 px-4 text-sm hover:bg-gray-100">Produk</a>
+            <a href="#mengapa-kami" class="block py-2 px-4 text-sm hover:bg-gray-100">Keunggulan</a>
+            <a href="#pesan" class="block py-2 px-4 text-sm bg-gray-200 text-center font-bold">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold font-display leading-tight mb-4">Kelezatan Premium untuk Setiap Momen</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                Dibuat dari bahan-bahan pilihan terbaik, Blissful Brownies menghadirkan tekstur fudgy dan rasa cokelat autentik yang tak terlupakan.
+            </p>
+            <a href="#produk" class="brown-btn text-lg font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300">
+                Lihat Varian Rasa
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="tentang" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="image/Untitled.jpeg" alt="Proses pembuatan brownies yang penuh cinta" class="rounded-lg shadow-2xl w-full h-auto object-cover" style="aspect-ratio: 4/3;">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold font-display section-title mb-4">Berawal dari Hobi, Dibuat dengan Hati</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Blissful Brownies lahir dari kecintaan pada kue dan keinginan untuk berbagi kebahagiaan melalui rasa. Kami percaya bahwa brownies terbaik adalah yang dibuat dengan bahan berkualitas dan sentuhan personal. Oleh karena itu, kami menciptakan brownies kukus premium yang lembut, nikmat, dan selalu fresh.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Kami berinovasi untuk memudahkan Anda menikmati camilan favorit kapan saja, melalui pemesanan online yang fleksibel, pengiriman ke rumah, hingga COD.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-display section-title">Produk Unggulan Kami</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Setiap gigitan adalah perpaduan sempurna dari bahan-bahan terbaik. Pelanggan dapat memilih topping sesuai keinginan.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="image/Untitle2d.jpeg" alt="Brownies Cokelat Klasik yang fudgy" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Classic Chocolate</h3>
+                        <p class="text-gray-600 text-sm mb-4">Rasa cokelat Belgia yang kaya dan tekstur super fudgy. Pilihan klasik yang selalu di hati.</p>
+                        <div class="font-bold text-lg text-gray-800">Rp 65.000</div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="image/Untitl3ed.jpeg" alt="Brownies Matcha dengan white chocolate" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Creamy Matcha</h3>
+                        <p class="text-gray-600 text-sm mb-4">Perpaduan unik antara manisnya white chocolate dan aroma khas matcha premium dari Jepang.</p>
+                        <div class="font-bold text-lg text-gray-800">Rp 75.000</div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="card-bg rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src= "image/Untitlded.jpeg" alt="Brownies Red Velvet dengan lapisan keju" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Red Velvet Cheese</h3>
+                        <p class="text-gray-600 text-sm mb-4">Kue red velvet yang lembut dengan lapisan cream cheese gurih yang melimpah di atasnya.</p>
+                        <div class="font-bold text-lg text-gray-800">Rp 80.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="mengapa-kami" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-display section-title">Mengapa Blissful Brownies?</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Kami tidak hanya membuat kue, kami menciptakan pengalaman.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Feature 1 -->
+                <div class="p-6">
+                    <div class="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-amber-100 rounded-full">
+                         <i data-feather="award" class="w-8 h-8 text-amber-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kualitas Premium</h3>
+                    <p class="text-gray-600 text-sm">Dari dark chocolate Belgia hingga mentega asli, kami hanya menggunakan bahan terbaik tanpa pengawet.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-6">
+                    <div class="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-green-100 rounded-full">
+                         <i data-feather="clock" class="w-8 h-8 text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Selalu Fresh</h3>
+                    <p class="text-gray-600 text-sm">Kami menggunakan sistem pre-order agar setiap brownies yang Anda terima dibuat khusus dan fresh from the oven.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-6">
+                    <div class="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-rose-100 rounded-full">
+                         <i data-feather="gift" class="w-8 h-8 text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Kemasan Eksklusif</h3>
+                    <p class="text-gray-600 text-sm">Dikemas dalam kotak premium yang elegan, menjadikan brownies kami pilihan tepat untuk hadiah atau hantaran.</p>
+                </div>
+                <!-- Feature 4 -->
+                 <div class="p-6">
+                    <div class="flex justify-center items-center mb-4 w-16 h-16 mx-auto bg-sky-100 rounded-full">
+                         <i data-feather="shopping-cart" class="w-8 h-8 text-sky-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pemesanan Mudah</h3>
+                    <p class="text-gray-600 text-sm">Tersedia di berbagai platform online, memudahkan Anda untuk memesan dari mana saja dan kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section id="pesan" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-display section-title mb-4">Pesan Sekarang!</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-10">Dapatkan Blissful Brownies Anda melalui platform favorit di bawah ini.</p>
+            <div class="flex justify-center items-center flex-wrap gap-4 md:gap-8">
+                <a href="#" target="_blank" class="flex items-center gap-3 bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition-colors">
+                    <i data-feather="shopping-bag"></i>
+                    <span>Tokopedia</span>
+                </a>
+                 <a href="#" target="_blank" class="flex items-center gap-3 bg-orange-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-orange-600 transition-colors">
+                    <i data-feather="shopping-cart"></i>
+                    <span>Shopee</span>
+                </a>
+                 <a href="https://instagram.com/bisfullbrownies" target="_blank" class="flex items-center gap-3 bg-pink-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-pink-600 transition-colors">
+                    <i data-feather="instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                 <a href="#" target="_blank" class="flex items-center gap-3 bg-black text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-800 transition-colors">
+                    <i data-feather="video"></i>
+                    <span>TikTok</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold font-display mb-2">Blissful Brownies</p>
+            <p class="text-gray-400 mb-4">&copy; 2025 Blissful Brownies. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://instagram.com/bisfullbrownies" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Feather Icons
+        feather.replace();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
